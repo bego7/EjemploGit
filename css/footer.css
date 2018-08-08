@@ -11,15 +11,21 @@ footer{
 	text-align: center;
 	align-self: center;
 	font-size: 10pt;
+	margin-left:9vw;
 }
 .footer__social{
 	display: flex;
 	align-items: center;
+	margin-right:13
 	
 }
 .footer__icono{
-	max-width:5vw;
-	max-height:5vh;
-	margin:0 2vw 0 2vw;
+	max-width:4vw;
+	max-height:4vh;
+	margin:0 1vw 0 1vw;
 	cursor: pointer;
+}
+
+.footer__icon:nth-child(4){
+	margin-right:10vw;
 }
