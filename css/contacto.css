@@ -1,0 +1,61 @@
+#contacto{
+	background: url(../img/contacto_fondo.jpg) no-repeat;
+	background-size:cover;
+}
+.contacto__contenedor{
+	display: flex;
+	flex-direction: column;
+}
+.contacto__titulo{
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 3.5vw;
+	margin:23vh auto 10vh auto;
+}
+.contacto__subtitulo{
+	font-size: 16px;
+	color: white;
+	margin:0 auto 7vh auto;
+}
+
+.contacto__formulario{
+	width: 60%;
+	margin: 0 auto;
+}
+.contacto__columna{
+	display: flex;
+
+
+}
+
+input{
+	height: 8vh;
+	width: 0%;
+	background-color: rgba(255,255,255,.2);
+	border: none;
+	color:white;
+	margin:.5vw;
+	flex:50%;
+	/*max-width: 600px;*/
+	padding: 10px;
+}
+
+input[type=submit]{
+	width: 150px;
+	height: auto;
+	padding: 10px;
+	margin-top: 20px;
+	margin-left:calc(100% - 150px);
+}
+
+/*Estilos móviles*/
+@media only screen and (max-device-width: 768px){
+	.contacto__titulo{
+		font-size: 22pt;
+		margin-top: 30vh;
+	}
+}
+
+
+

@@ -1,0 +1,125 @@
+.menu{
+	display: flex;
+	flex:row;
+	position: fixed;
+	height: 12vh;
+	width: 100%;	
+
+}
+.menu__logo{
+	width:85px;
+	height:85px;
+	margin-left:4vw;
+	display: none;
+}
+.menu__logo2{
+	width:85px;
+	height:85px;
+	margin-left:4vw;
+	display: none;
+}
+
+.menu__movil{
+	display: none;
+	z-index: 100;
+}
+#menuAzul{
+	display: none;
+	z-index: 120;
+}
+.menu__movil img{
+	display: none;
+}
+
+
+li a{
+	text-decoration: none;
+	color: white;
+	height: 100%;
+	cursor: pointer;
+	text-align: center;
+}
+.menu__navegacion{
+	display: flex;
+	flex:1;
+	height: auto;
+	justify-content: flex-end;
+	text-align: center;
+	flex-direction: row;
+}
+
+.menu__opcion{
+	text-transform: uppercase;
+	padding:5vh 3vh 0 3vh;
+	color: black;
+	height:100%;
+	text-align: center;
+	
+}
+#menu7{
+	margin-right: 3vw;
+}
+
+
+/*Efectos de color en activo*/
+.menu__contactoNosotros-activo{
+	background: rgba(255,255,255,.2);
+}
+.menu__ropa{
+	background: #c3c7d3;
+	z-index: 600;
+}
+
+/*Estilos para móviles*/
+
+@media only screen and (max-device-width: 768px){
+	.menu__navegacion{
+		flex-direction: column;
+		display: none;
+		position: absolute;
+		top: 15vh;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+		
+	}
+	.menu__movil{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 0 5%;
+		width: 90%;
+		height: 15vh;
+		z-index: 100;
+	}
+
+	.menu__hamburguesa {
+		width: 10vw;
+		height: 10vw;
+		position:fixed;
+		z-index: 102;
+	}
+
+	.menu__ropaMovil{
+		background:#171a3d ;
+		color: white;
+	}
+	.menu__contactoNosotrosMovil-activo{
+		z-index: 105;
+		background:#171a3d;
+		color:white;
+	}
+
+	#menu7{
+		margin-right: 0vw;
+		z-index: 
+	}
+
+	#menuBlanco{
+		display: inline;
+	}
+	
+}

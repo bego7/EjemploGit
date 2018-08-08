@@ -1,0 +1,25 @@
+footer{
+	display: flex;
+	background: black;
+	height:10%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	
+}
+.footer__copyright{
+	color: white;
+	text-align: center;
+	align-self: center;
+	font-size: 10pt;
+}
+.footer__social{
+	display: flex;
+	align-items: center;
+	
+}
+.footer__icono{
+	max-width:5vw;
+	max-height:5vh;
+	margin:0 2vw 0 2vw;
+	cursor: pointer;
+}

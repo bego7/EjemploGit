@@ -1,0 +1,70 @@
+#inicio{
+		background: url(../img/inicio_fondo.jpg) no-repeat;
+}
+.seccion{
+	height: auto;
+	width: 100%;
+	background-size:cover;
+	height: 100%;
+	/*background-position: top-center;*/
+}
+
+
+.inicio__contenedor{
+	display: flex;
+	flex-direction: column;	
+	
+}
+.inicio__logo{
+	width:50%;
+	margin: 10vh auto;
+	max-width: 350px;
+	max-height: 350px;
+
+}
+.inicio__frase{
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin:-7vh auto;
+	font-family: 'Nanum Gothic', sans-serif;
+	padding: 2vh ;
+	/*font-size: 1.5vw;*/
+	line-height: 1.6;
+
+}
+
+.inicio__descripcion{
+	color:white;
+	width: 50%;
+	text-align: center;
+	margin:6vh auto;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.inicio__flecha{
+	margin:-3vh auto;
+}
+
+.inicio__flecha img{
+	width:4vw; 
+	height:4vw;
+}
+/*Estilos para móvil*/
+@media only screen and (max-device-width: 768px){
+	.inicio__logo{
+		margin-top: 20vh;
+		width:80%;
+	}
+
+	.inicio__frase{
+		width: 80%;
+
+	}
+	.inicio__descripcion{
+		width: 80%;
+	}
+	.inicio__flecha img{
+		width: 10vw;
+		height: 10vw;
+	}
+}
