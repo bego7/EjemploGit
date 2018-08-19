@@ -170,6 +170,10 @@ function menu(num)
 		
 
 	}
+
+	else if(num==9){
+		var seccion='#nosotros';
+	}
 	//para que anime bonito con el click
 	$("html, body").animate({scrollTop: $(seccion).offset().top}, 1000);
 }
@@ -180,5 +184,7 @@ function muestra_menu()
 {	//para que el menu se abra y cierre bonito en celulares
 	$(".menu__navegacion").slideToggle();
 }
+
+
 
 
