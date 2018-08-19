@@ -48,6 +48,12 @@
 .inicio__flecha img{
 	width:4vw; 
 	height:4vw;
+	transition: all .2s ease-in-out;
+}
+
+.inicio__flecha img:hover{
+	width: 4.5vw;
+	height: 4.5vw;
 }
 /*Estilos para móvil*/
 @media only screen and (max-device-width: 768px){

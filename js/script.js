@@ -185,6 +185,58 @@ function muestra_menu()
 	$(".menu__navegacion").slideToggle();
 }
 
+function enviar()
+{
+	var name=$("#name").val();
+	var lastName=$("#lastName").val();
+	var email=$("#email").val();
+	var subject=$("#subject").val();
+	var message=$("#message").val();
+
+	if(name=="" || lastName=="" || email=="" || subject=="" || message=="")
+		alert("Fill all the fields");
+	else
+	{
+		$("#alerta").text("Sending...");
+		$(".send").hide();
+
+		$.ajax({
+			type: "POST",
+			url: "enviar.php",
+			data: {
+				name: name,
+				lastName: lastName,
+				email: email,
+				subject: subject,
+				message: message
+			},
+			success: function(data)
+			{
+				if(data==1)
+				{
+					$("#alerta").text("Message sended, we'll contact you soon!");
+					$("#name").val("");
+					$("#lastName").val("");
+					$("#email").val("");
+					$("#subject").val("");
+					$("#message").val("");
+					$(".send").show("");
+				}
+				else
+				{
+					$("#alerta").text("Something wrong happen, please try again later");
+					$(".send").show();
+				}		
+			},
+			error: function()
+			{
+				$("#alerta").text("No se pudo conectar con el servidor");
+			}
+		});
+	}
+
+}
+
 
 
 

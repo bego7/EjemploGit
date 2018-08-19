@@ -2,7 +2,7 @@ footer{
 	display: flex;
 	background: black;
 	height:10%;
-	justify-content: space-around;
+	/* justify-content: space-around; */
 	flex-wrap: wrap;
 	
 }
@@ -11,12 +11,13 @@ footer{
 	text-align: center;
 	align-self: center;
 	font-size: 10pt;
-	margin-left:5vw;
+	margin-left:20vw;
 }
 .footer__social{
 	display: flex;
 	align-items: center;
-	margin-right:13
+	margin-left:25vw;
+	
 	
 }
 .footer__icono{
@@ -25,7 +26,7 @@ footer{
 	margin:0 1vw 0 1vw;
 	cursor: pointer;
 }
-
+/* 
 .footer__icon:nth-child(4){
 	margin-right:10vw;
-}
+} */
