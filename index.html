@@ -199,23 +199,23 @@
 				<div class="contacto__subtitulo">
 					Feel free to email us
 				</div>
-				<form action="" class="contacto__formulario">
+				<form  class="contacto__formulario">
 					<div class="contacto__columna">
-						<input type="text" placeholder="Name"class="Name">
-						<input type="text" placeholder="Last name">
+						<input type="text" placeholder="Name"class="Name" id="name">
+						<input type="text" placeholder="Last name" id="lastname">
 					</div>
 
 					<div class="contacto__columna">
-						<input type="text" placeholder="Email">
-						<input type="text" placeholder="Subject">
+						<input type="text" placeholder="Email" id="email">
+						<input type="text" placeholder="Subject" id="subject">
 						
 					</div>
 					<div class="contacto__columna">
-						<input type="text" placeholder="Message" class="message">
+						<input type="text" placeholder="Message" class="message" id="message">
 					</div>
 
 					
-					<input type="submit" value="Send" onclick="enviar" class="send">
+					<input type="submit" value="Send" onclick="enviar()" class="send">
 					
 
 					
@@ -239,6 +239,7 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -186,19 +186,22 @@ function muestra_menu()
 }
 
 function enviar()
-{
+{	
+	$("html, body").animate({scrollTop: $("#contacto").offset().top}, 1000);
 	var name=$("#name").val();
-	var lastName=$("#lastName").val();
+	var lastName=$("#lastname").val();
 	var email=$("#email").val();
 	var subject=$("#subject").val();
 	var message=$("#message").val();
 
 	if(name=="" || lastName=="" || email=="" || subject=="" || message=="")
-		alert("Fill all the fields");
+		swal("Error", "Llena todos los campos", "error");
 	else
 	{
-		$("#alerta").text("Sending...");
-		$(".send").hide();
+		// $("#alerta").text("Sending...");
+		// alert("Sending");
+		// $(".send").hide();
+		swal("Bien!", "Tu correo ha sido enviado!", "success");
 
 		$.ajax({
 			type: "POST",
@@ -212,9 +215,10 @@ function enviar()
 			},
 			success: function(data)
 			{
+				
 				if(data==1)
 				{
-					$("#alerta").text("Message sended, we'll contact you soon!");
+				
 					$("#name").val("");
 					$("#lastName").val("");
 					$("#email").val("");
