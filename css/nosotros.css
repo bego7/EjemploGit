@@ -1,5 +1,9 @@
 #nosotros{
 			background: url(../img/nosotros_fondo.jpg) no-repeat;
+			background-size:cover;
+			background-position: center;
+			width: 100%;
+			height: auto;
 }
 .nosotros__contenedor{
 	display: flex;
@@ -22,6 +26,9 @@
 	font-size: 1.5vw;
 
 }
+.nosotros__contenedor{
+	width: 100%;
+}
 .nosotros__informacion{
 	color: white;
 	text-align: center;
@@ -29,6 +36,7 @@
 	margin: 0 auto;
 	line-height: 1.6;
 	font-size: 1.5vw;
+	margin-bottom: 10%;
 }
 .nosotros span{
 	font-family: 'Pacifico', cursive;
@@ -41,18 +49,28 @@ b{
 
 /*Estilos para móviles*/
 @media only screen and (max-device-width: 768px){
+	.nosotros__contenedor{
+		width: 90%;
+		margin: 0 auto;
+	}
 	.nosotros__titulo{
-		font-size: 25pt;
+		font-size: 20pt;
+		margin-top:5%;
+		padding: 0;
 	}
 	.nosotros__pregunta{
+		width: 100%;
+		margin: 0 auto;
 		font-size: 10pt;
 		text-align: center;
 		margin:1vw;
 	}
 	.nosotros__informacion{
-		font-size: 8pt;
+		font-size: 12pt;
+		width: 90%;
+		margin-bottom: 10%;
 	}
 	.nosotros span{
-		font-size: 10pt;
+		font-size: 14pt;
 	}
 }

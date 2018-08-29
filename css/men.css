@@ -1,6 +1,9 @@
 .ropa{
 	background: url(../img/seccion_fondo.jpg) no-repeat;
 	background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
 }
 .men__contenedor{
 	display: flex;
@@ -13,10 +16,10 @@
 	text-transform: uppercase;
 	margin: 15vh auto;
 	text-align: center;
-	order: 2;
 	height:20px;
-	position: absolute;
-	left: 45%;
+	/* Este era el problema por el que en mi vista de movil el texto se veía encima de mi menú */
+	/* position: absolute;
+	left: 45%; */
 	font-family: 'Maven Pro', sans-serif;
 	
 }
@@ -44,33 +47,40 @@ span{
 
 }
 
-/*Estilos móviles*/
-@media only screen and (max-device-width: 768px){
-	.men__contenedor{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: relative;
-	}
-	.men__imagen{
-		order:2;
-		width: 80vw;
-		margin-top: 25vh;
-		height:80vw;
 
-	}
-	.men__titulo{
-		order: 1;
-		position: absolute;
-		top:2vh;
-		font-size: 16pt;
-	}
-	.men__texto{
-		margin-top: 5vh;
-		font-size: 10pt;
-		width: 80%;
-	}
-	.men__texto span{
-		font-size: 12pt;
-	}
+
+/* estilos moviles 2.0 */
+@media only screen and (max-device-width: 768px){
+.men__contenedor{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+}
+.men__titulo{
+	order: 1;
+	font-size: 24pt;
+	margin: 10% 0;
+
+}
+.men__imagen{
+	width: 100%;
+	height:auto; 
+	margin:0;
+	padding: 0;
+	order:2;
+}
+.men__texto{
+	order: 3;
+	width: 100%;
+	height: auto;
+	font-size: 14pt;
+	margin: 0 0 10% 0;
+}
+
+span.men{
+	font-size: 16pt;
+}
+
 }

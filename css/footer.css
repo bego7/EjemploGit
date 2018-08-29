@@ -26,7 +26,27 @@ footer{
 	margin:0 1vw 0 1vw;
 	cursor: pointer;
 }
-/* 
-.footer__icon:nth-child(4){
-	margin-right:10vw;
-} */
+@media only screen and (max-device-width: 768px){
+	.footer__icono{
+		max-width:8vw;
+		max-height:8vh;
+		 /* margin:0 6vw 0 2vw; */
+		 align-items: center; 
+		 margin-left: 6vw;	 
+	} 
+	.footer__social{
+		display: flex;
+		flex-direction: row;
+		margin-left:18vw;
+		
+		
+	}
+	.footer__copyright{
+		text-align: center;
+		align-self: center;
+		margin-left: 15vw;
+	}
+	/* .footer__icono:nth-child(0){
+		margin-left: 1vw;
+	} */
+}

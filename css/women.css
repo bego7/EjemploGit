@@ -1,6 +1,9 @@
 .ropa{
 	background: url(../img/seccion_fondo.jpg) no-repeat;
 	background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
 }
 .women__contenedor{
 	display: flex;
@@ -13,30 +16,29 @@
 	text-transform: uppercase;
 	margin: 15vh auto;
 	text-align: center;
-	order: 2;
 	height:20px;
-	
-	position: absolute;
-	left: 45%;
+	/* Este era el problema por el que en mi vista de movil el texto se veía encima de mi menú */
+	/* position: absolute;
+	left: 45%; */
 	font-family: 'Maven Pro', sans-serif;
-	/*font-weight: bolder;*/
+	
 }
 .women__imagen{
 	margin-top: 13vh;
-	max-height:505.5px; 
-	max-width: 600px;
+	height:505.5px; 
+	width: 600px;
 	order: 1;
 	margin-left:7vw;
 	padding-top: 5vh;
 }
 .women__texto{
 	order:3;
-	margin-top: 30vh;
+	margin-top: 35vh;
 	text-align: center;
 	color: black;
 	width: 25%;
 	line-height: 1.6;
-	font-size: 1.4vw;
+	font-size: 1.6vw;
 }
 span{
 	color:black;
@@ -45,33 +47,43 @@ span{
 
 }
 
-/*Estilos móviles*/
-@media only screen and (max-device-width: 768px){
-	.women__contenedor{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: relative;
-	}
-	.women__imagen{
-		order:2;
-		width: 80vw;
-		margin-top: 25vh;
-		height:80vw;
 
-	}
-	.women__titulo{
-		order: 1;
-		position: absolute;
-		top:2vh;
-		font-size: 16pt;
-	}
-	.women__texto{
-		margin-top: 5vh;
-		font-size: 8pt;
-		width: 80%;
-	}
-	.women__texto span{
-		font-size: 12pt;
-	}
+
+/* estilos moviles 2.0 */
+@media only screen and (max-device-width: 768px){
+.women__contenedor{
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
 }
+.women__titulo{
+	order: 1;
+	font-size: 24pt;
+	margin: 10% 0;
+
+}
+.women__imagen{
+	width: 100%;
+	height:auto; 
+	margin:0;
+	padding: 0;
+	order:2;
+}
+.women__texto{
+	order: 3;
+	width: 100%;
+	height: auto;
+	font-size: 14pt;
+	margin: 0;
+	margin: 0 0 10% 0;
+}
+
+span.women{
+	font-size: 16pt;
+}
+
+
+}
+

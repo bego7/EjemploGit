@@ -185,6 +185,8 @@ function muestra_menu()
 	$(".menu__navegacion").slideToggle();
 }
 
+
+
 function enviar()
 {	
 	$("html, body").animate({scrollTop: $("#contacto").offset().top}, 1000);
