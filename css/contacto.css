@@ -1,6 +1,9 @@
 #contacto{
 	background: url(../img/contacto_fondo.jpg) no-repeat;
 	background-size:cover;
+	background-position: center;
+	width: 100%;
+	height: auto;
 }
 .contacto__contenedor{
 	display: flex;
@@ -67,6 +70,14 @@ input[type=submit]{
 	}
 	#email, #name, #lastname, #message,#subject{
 		width: 100%;
+	}
+
+	input[type="submit"]{
+		margin-bottom: 10%;
+	}
+
+	#message{
+		height:80px;
 	}
 }
 

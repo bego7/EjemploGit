@@ -8,28 +8,32 @@
 .men__contenedor{
 	display: flex;
 	flex:row;
-	justify-content: space-around;
+	margin: 0 auto;
+	flex-wrap: wrap;
 }
 .men__titulo {
 	color:#2b3e4f;
 	font-size: 2.7vw;
 	text-transform: uppercase;
-	margin: 15vh auto;
 	text-align: center;
 	height:20px;
 	/* Este era el problema por el que en mi vista de movil el texto se veía encima de mi menú */
 	/* position: absolute;
 	left: 45%; */
 	font-family: 'Maven Pro', sans-serif;
+	display: block;
+	width: 100%;
+	margin-top: 5%;
+
 	
 }
 .men__imagen{
 	margin-top: 13vh;
 	height:505.5px; 
 	width: 600px;
-	order: 1;
-	margin-left:7vw;
-	padding-top: 5vh;
+	order: 2;
+	margin-left:10%;
+	padding-top: 5vh; */
 }
 .men__texto{
 	order:3;
@@ -39,6 +43,7 @@
 	width: 25%;
 	line-height: 1.6;
 	font-size: 1.6vw;
+	margin-left: 10%;
 }
 span{
 	color:black;
